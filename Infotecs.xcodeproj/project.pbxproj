@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5D18945298B060E004A2D1C /* InfotecsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18935298B060D004A2D1C /* InfotecsApp.swift */; };
+		A5D18946298B060E004A2D1C /* InfotecsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18935298B060D004A2D1C /* InfotecsApp.swift */; };
+		A5D18947298B060E004A2D1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18936298B060D004A2D1C /* ContentView.swift */; };
+		A5D18948298B060E004A2D1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18936298B060D004A2D1C /* ContentView.swift */; };
+		A5D18949298B060E004A2D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D18937298B060E004A2D1C /* Assets.xcassets */; };
+		A5D1894A298B060E004A2D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D18937298B060E004A2D1C /* Assets.xcassets */; };
+		A5D18963298B068E004A2D1C /* NewIOKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D18955298B068D004A2D1C /* NewIOKit.m */; };
+		A5D18964298B068E004A2D1C /* NewIOKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D18955298B068D004A2D1C /* NewIOKit.m */; };
+		A5D18965298B068E004A2D1C /* SystemInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5D18956298B068D004A2D1C /* SystemInfo.mm */; };
+		A5D18966298B068E004A2D1C /* SystemInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5D18956298B068D004A2D1C /* SystemInfo.mm */; };
+		A5D18967298B068E004A2D1C /* WriteDocumentCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5D18958298B068D004A2D1C /* WriteDocumentCPP.cpp */; };
+		A5D18968298B068E004A2D1C /* WriteDocumentCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5D18958298B068D004A2D1C /* WriteDocumentCPP.cpp */; };
+		A5D18969298B068E004A2D1C /* WriteDocument.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5D1895A298B068D004A2D1C /* WriteDocument.mm */; };
+		A5D1896A298B068E004A2D1C /* WriteDocument.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5D1895A298B068D004A2D1C /* WriteDocument.mm */; };
+		A5D1896F298B068E004A2D1C /* Sysctl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5D18960298B068E004A2D1C /* Sysctl.cpp */; };
+		A5D18970298B068E004A2D1C /* Sysctl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5D18960298B068E004A2D1C /* Sysctl.cpp */; };
+		A5D18971298B068E004A2D1C /* UIDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18962298B068E004A2D1C /* UIDeviceInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A5D18935298B060D004A2D1C /* InfotecsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfotecsApp.swift; sourceTree = "<group>"; };
+		A5D18936298B060D004A2D1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5D18937298B060E004A2D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5D1893C298B060E004A2D1C /* Infotecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infotecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D18942298B060E004A2D1C /* Infotecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infotecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D18944298B060E004A2D1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A5D18953298B068D004A2D1C /* Infotecs (iOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Infotecs (iOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5D18954298B068D004A2D1C /* Infotecs (macOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Infotecs (macOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5D18955298B068D004A2D1C /* NewIOKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewIOKit.m; sourceTree = "<group>"; };
+		A5D18956298B068D004A2D1C /* SystemInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SystemInfo.mm; sourceTree = "<group>"; };
+		A5D18957298B068D004A2D1C /* SystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInfo.h; sourceTree = "<group>"; };
+		A5D18958298B068D004A2D1C /* WriteDocumentCPP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WriteDocumentCPP.cpp; sourceTree = "<group>"; };
+		A5D1895A298B068D004A2D1C /* WriteDocument.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WriteDocument.mm; sourceTree = "<group>"; };
+		A5D1895C298B068E004A2D1C /* NewIOKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewIOKit.h; sourceTree = "<group>"; };
+		A5D1895D298B068E004A2D1C /* WriteDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteDocument.h; sourceTree = "<group>"; };
+		A5D1895F298B068E004A2D1C /* WriteDocumentCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteDocumentCPP.h; sourceTree = "<group>"; };
+		A5D18960298B068E004A2D1C /* Sysctl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sysctl.cpp; sourceTree = "<group>"; };
+		A5D18961298B068E004A2D1C /* Sysctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sysctl.h; sourceTree = "<group>"; };
+		A5D18962298B068E004A2D1C /* UIDeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceInfo.swift; sourceTree = "<group>"; };
+		A5D18973298B07A1004A2D1C /* Infotecs (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Infotecs (iOS).entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5D18939298B060E004A2D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D1893F298B060E004A2D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5D1892F298B060D004A2D1C = {
+			isa = PBXGroup;
+			children = (
+				A5D18973298B07A1004A2D1C /* Infotecs (iOS).entitlements */,
+				A5D18934298B060D004A2D1C /* Shared */,
+				A5D18943298B060E004A2D1C /* macOS */,
+				A5D1893D298B060E004A2D1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5D18934298B060D004A2D1C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A5D18935298B060D004A2D1C /* InfotecsApp.swift */,
+				A5D18936298B060D004A2D1C /* ContentView.swift */,
+				A5D18962298B068E004A2D1C /* UIDeviceInfo.swift */,
+				A5D1895C298B068E004A2D1C /* NewIOKit.h */,
+				A5D18955298B068D004A2D1C /* NewIOKit.m */,
+				A5D18961298B068E004A2D1C /* Sysctl.h */,
+				A5D18960298B068E004A2D1C /* Sysctl.cpp */,
+				A5D18957298B068D004A2D1C /* SystemInfo.h */,
+				A5D18956298B068D004A2D1C /* SystemInfo.mm */,
+				A5D1895F298B068E004A2D1C /* WriteDocumentCPP.h */,
+				A5D18958298B068D004A2D1C /* WriteDocumentCPP.cpp */,
+				A5D1895D298B068E004A2D1C /* WriteDocument.h */,
+				A5D1895A298B068D004A2D1C /* WriteDocument.mm */,
+				A5D18937298B060E004A2D1C /* Assets.xcassets */,
+				A5D18953298B068D004A2D1C /* Infotecs (iOS)-Bridging-Header.h */,
+				A5D18954298B068D004A2D1C /* Infotecs (macOS)-Bridging-Header.h */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A5D1893D298B060E004A2D1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5D1893C298B060E004A2D1C /* Infotecs.app */,
+				A5D18942298B060E004A2D1C /* Infotecs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5D18943298B060E004A2D1C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A5D18944298B060E004A2D1C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5D1893B298B060E004A2D1C /* Infotecs (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D1894D298B060E004A2D1C /* Build configuration list for PBXNativeTarget "Infotecs (iOS)" */;
+			buildPhases = (
+				A5D18938298B060E004A2D1C /* Sources */,
+				A5D18939298B060E004A2D1C /* Frameworks */,
+				A5D1893A298B060E004A2D1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Infotecs (iOS)";
+			productName = "Infotecs (iOS)";
+			productReference = A5D1893C298B060E004A2D1C /* Infotecs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5D18941298B060E004A2D1C /* Infotecs (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D18950298B060E004A2D1C /* Build configuration list for PBXNativeTarget "Infotecs (macOS)" */;
+			buildPhases = (
+				A5D1893E298B060E004A2D1C /* Sources */,
+				A5D1893F298B060E004A2D1C /* Frameworks */,
+				A5D18940298B060E004A2D1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Infotecs (macOS)";
+			productName = "Infotecs (macOS)";
+			productReference = A5D18942298B060E004A2D1C /* Infotecs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5D18930298B060D004A2D1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A5D1893B298B060E004A2D1C = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+					A5D18941298B060E004A2D1C = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+				};
+			};
+			buildConfigurationList = A5D18933298B060D004A2D1C /* Build configuration list for PBXProject "Infotecs" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5D1892F298B060D004A2D1C;
+			productRefGroup = A5D1893D298B060E004A2D1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5D1893B298B060E004A2D1C /* Infotecs (iOS) */,
+				A5D18941298B060E004A2D1C /* Infotecs (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5D1893A298B060E004A2D1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D18949298B060E004A2D1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D18940298B060E004A2D1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D1894A298B060E004A2D1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5D18938298B060E004A2D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D18967298B068E004A2D1C /* WriteDocumentCPP.cpp in Sources */,
+				A5D18947298B060E004A2D1C /* ContentView.swift in Sources */,
+				A5D18971298B068E004A2D1C /* UIDeviceInfo.swift in Sources */,
+				A5D18945298B060E004A2D1C /* InfotecsApp.swift in Sources */,
+				A5D1896F298B068E004A2D1C /* Sysctl.cpp in Sources */,
+				A5D18965298B068E004A2D1C /* SystemInfo.mm in Sources */,
+				A5D18969298B068E004A2D1C /* WriteDocument.mm in Sources */,
+				A5D18963298B068E004A2D1C /* NewIOKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D1893E298B060E004A2D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D18968298B068E004A2D1C /* WriteDocumentCPP.cpp in Sources */,
+				A5D18948298B060E004A2D1C /* ContentView.swift in Sources */,
+				A5D18946298B060E004A2D1C /* InfotecsApp.swift in Sources */,
+				A5D18970298B068E004A2D1C /* Sysctl.cpp in Sources */,
+				A5D18966298B068E004A2D1C /* SystemInfo.mm in Sources */,
+				A5D1896A298B068E004A2D1C /* WriteDocument.mm in Sources */,
+				A5D18964298B068E004A2D1C /* NewIOKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A5D1894B298B060E004A2D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5D1894C298B060E004A2D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A5D1894E298B060E004A2D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Infotecs (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gitgobrr.Infotecs;
+				PRODUCT_NAME = Infotecs;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Infotecs (iOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5D1894F298B060E004A2D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Infotecs (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gitgobrr.Infotecs;
+				PRODUCT_NAME = Infotecs;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Infotecs (iOS)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5D18951298B060E004A2D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gitgobrr.Infotecs;
+				PRODUCT_NAME = Infotecs;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Infotecs (macOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A5D18952298B060E004A2D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gitgobrr.Infotecs;
+				PRODUCT_NAME = Infotecs;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Infotecs (macOS)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5D18933298B060D004A2D1C /* Build configuration list for PBXProject "Infotecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D1894B298B060E004A2D1C /* Debug */,
+				A5D1894C298B060E004A2D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5D1894D298B060E004A2D1C /* Build configuration list for PBXNativeTarget "Infotecs (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D1894E298B060E004A2D1C /* Debug */,
+				A5D1894F298B060E004A2D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5D18950298B060E004A2D1C /* Build configuration list for PBXNativeTarget "Infotecs (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D18951298B060E004A2D1C /* Debug */,
+				A5D18952298B060E004A2D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5D18930298B060D004A2D1C /* Project object */;
+}
