@@ -14,14 +14,19 @@
     NSMutableDictionary*    cpuInfo = [[NSMutableDictionary alloc] init];
     CFMutableDictionaryRef  matchClasses = NULL;
     kern_return_t           kernResult = KERN_FAILURE;
-    mach_port_t             machPort;
+    mach_port_t             machPort = 0;
     io_iterator_t           serviceIterator;
     
     io_object_t             cpuService;
     
-    kernResult = IOMainPort( MACH_PORT_NULL, &machPort );
-    if( KERN_SUCCESS != kernResult ) {
-        printf( "IOMasterPort failed: %d\n", kernResult );
+    if (@available(macOS 12.0, *)) {
+        kernResult = IOMainPort( MACH_PORT_NULL, &machPort );
+        if( KERN_SUCCESS != kernResult ) {
+            printf( "IOMasterPort failed: %d\n", kernResult );
+        }
+    } else {
+        // Fallback on earlier versions
+        printf( "Not available (macOS 12+)" );
     }
     
     matchClasses = IOServiceNameMatching( "processor" );
@@ -60,16 +65,23 @@
     return cpuInfo;
 }
 +(NSString *) getPlatformSerialNumber {
-    io_registry_entry_t     rootEntry = IORegistryEntryFromPath( kIOMainPortDefault, "IOService:/" );
-    CFTypeRef serialAsCFString = NULL;
+    if (@available(macOS 12.0, *)) {
+        io_registry_entry_t     rootEntry = IORegistryEntryFromPath( kIOMainPortDefault, "IOService:/" );
+        CFTypeRef serialAsCFString = NULL;
+        
+        serialAsCFString = IORegistryEntryCreateCFProperty( rootEntry,
+                                                           CFSTR(kIOPlatformSerialNumberKey),
+                                                           kCFAllocatorDefault,
+                                                           0);
+        
+        IOObjectRelease( rootEntry );
+        return (__bridge NSString *)((NULL != serialAsCFString) ? serialAsCFString : nil);
+    } else {
+        // Fallback on earlier versions
+        
+        return @"Not available (macOS 12+)";
+    }
     
-    serialAsCFString = IORegistryEntryCreateCFProperty( rootEntry,
-                                                       CFSTR(kIOPlatformSerialNumberKey),
-                                                       kCFAllocatorDefault,
-                                                       0);
-    
-    IOObjectRelease( rootEntry );
-    return (__bridge NSString *)((NULL != serialAsCFString) ? serialAsCFString : nil);
 }
 
 + (NSString*)objc_println:(NSString *)format, ... {
