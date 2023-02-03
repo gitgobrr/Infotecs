@@ -22,7 +22,6 @@ char* Sysctl::stringForKeys(int mib[]) {
     sysctl(mib, 2, NULL, &len, NULL, 0);
     strRes = static_cast<char*>(malloc(len));
     sysctl(mib, 2, strRes, &len, NULL, 0);
-    free(mib);
     return strRes;
 }
 
@@ -53,10 +52,16 @@ int Sysctl::activeCPU = valForName<int>("hw.activecpu");
 
 /// NOTE: this is *corrected* on iOS devices
 #if TARGET_OS_IPHONE && !TARGET_OS_SIMULATOR && !defined(__x86_64__) && !defined(__i386__) //!arch(x86_64) && !arch(i386)
-std::string Sysctl::model = strcat(strdup("hw.model: "),
-                                   stringForKeys(new int[2]{CTL_HW, HW_MACHINE}));
-std::string Sysctl::machine = strcat(strdup("hw.machine: "),
-                                     stringForKeys(new int[2]{CTL_HW, HW_MODEL}));
+std::string Sysctl::machine = [] {
+    int mib[2] = {CTL_HW, HW_MODEL};
+    std::string strRes = stringForKeys(mib);
+    return "hw.machine: "+strRes;
+}();
+std::string Sysctl::model = [] {
+    int mib[2] = {CTL_HW, HW_MACHINE};
+    std::string strRes = stringForKeys(mib);
+    return "hw.model: "+strRes;
+}();
 #else
 std::string Sysctl::machine = stringForName("hw.machine");
 std::string Sysctl::model = stringForName("hw.model");
