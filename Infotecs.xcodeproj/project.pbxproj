@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5CF77C7298EA2E8007C26A6 /* SystemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF77C6298EA2D6007C26A6 /* SystemInfoView.swift */; };
+		A5CF77C8298EA2E8007C26A6 /* SystemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF77C6298EA2D6007C26A6 /* SystemInfoView.swift */; };
+		A5CF77CA298EA384007C26A6 /* FileReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF77C9298EA384007C26A6 /* FileReaderView.swift */; };
+		A5CF77CB298EA384007C26A6 /* FileReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF77C9298EA384007C26A6 /* FileReaderView.swift */; };
+		A5CF77CC298EA4BF007C26A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18936298B060D004A2D1C /* ContentView.swift */; };
+		A5CF77CD298EA4BF007C26A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18936298B060D004A2D1C /* ContentView.swift */; };
+		A5CF77CF298EEA07007C26A6 /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF77CE298EEA07007C26A6 /* FileView.swift */; };
+		A5CF77D0298EEA07007C26A6 /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF77CE298EEA07007C26A6 /* FileView.swift */; };
 		A5D18945298B060E004A2D1C /* InfotecsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18935298B060D004A2D1C /* InfotecsApp.swift */; };
 		A5D18946298B060E004A2D1C /* InfotecsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18935298B060D004A2D1C /* InfotecsApp.swift */; };
-		A5D18947298B060E004A2D1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18936298B060D004A2D1C /* ContentView.swift */; };
-		A5D18948298B060E004A2D1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D18936298B060D004A2D1C /* ContentView.swift */; };
 		A5D18949298B060E004A2D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D18937298B060E004A2D1C /* Assets.xcassets */; };
 		A5D1894A298B060E004A2D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D18937298B060E004A2D1C /* Assets.xcassets */; };
 		A5D18963298B068E004A2D1C /* NewIOKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D18955298B068D004A2D1C /* NewIOKit.m */; };
@@ -27,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5CF77C6298EA2D6007C26A6 /* SystemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemInfoView.swift; sourceTree = "<group>"; };
+		A5CF77C9298EA384007C26A6 /* FileReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReaderView.swift; sourceTree = "<group>"; };
+		A5CF77CE298EEA07007C26A6 /* FileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileView.swift; sourceTree = "<group>"; };
 		A5D18935298B060D004A2D1C /* InfotecsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfotecsApp.swift; sourceTree = "<group>"; };
 		A5D18936298B060D004A2D1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A5D18937298B060E004A2D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +91,9 @@
 			children = (
 				A5D18935298B060D004A2D1C /* InfotecsApp.swift */,
 				A5D18936298B060D004A2D1C /* ContentView.swift */,
+				A5CF77C6298EA2D6007C26A6 /* SystemInfoView.swift */,
+				A5CF77C9298EA384007C26A6 /* FileReaderView.swift */,
+				A5CF77CE298EEA07007C26A6 /* FileView.swift */,
 				A5D18962298B068E004A2D1C /* UIDeviceInfo.swift */,
 				A5D1895C298B068E004A2D1C /* NewIOKit.h */,
 				A5D18955298B068D004A2D1C /* NewIOKit.m */,
@@ -218,12 +230,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D18967298B068E004A2D1C /* WriteDocumentCPP.cpp in Sources */,
-				A5D18947298B060E004A2D1C /* ContentView.swift in Sources */,
 				A5D18971298B068E004A2D1C /* UIDeviceInfo.swift in Sources */,
 				A5D18945298B060E004A2D1C /* InfotecsApp.swift in Sources */,
 				A5D1896F298B068E004A2D1C /* Sysctl.cpp in Sources */,
 				A5D18965298B068E004A2D1C /* SystemInfo.mm in Sources */,
+				A5CF77CF298EEA07007C26A6 /* FileView.swift in Sources */,
 				A5D18969298B068E004A2D1C /* WriteDocument.mm in Sources */,
+				A5CF77CC298EA4BF007C26A6 /* ContentView.swift in Sources */,
+				A5CF77CA298EA384007C26A6 /* FileReaderView.swift in Sources */,
+				A5CF77C7298EA2E8007C26A6 /* SystemInfoView.swift in Sources */,
 				A5D18963298B068E004A2D1C /* NewIOKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,11 +248,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D18968298B068E004A2D1C /* WriteDocumentCPP.cpp in Sources */,
-				A5D18948298B060E004A2D1C /* ContentView.swift in Sources */,
 				A5D18946298B060E004A2D1C /* InfotecsApp.swift in Sources */,
+				A5CF77C8298EA2E8007C26A6 /* SystemInfoView.swift in Sources */,
 				A5D18970298B068E004A2D1C /* Sysctl.cpp in Sources */,
 				A5D18966298B068E004A2D1C /* SystemInfo.mm in Sources */,
+				A5CF77CD298EA4BF007C26A6 /* ContentView.swift in Sources */,
+				A5CF77CB298EA384007C26A6 /* FileReaderView.swift in Sources */,
 				A5D1896A298B068E004A2D1C /* WriteDocument.mm in Sources */,
+				A5CF77D0298EEA07007C26A6 /* FileView.swift in Sources */,
 				A5D18964298B068E004A2D1C /* NewIOKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
