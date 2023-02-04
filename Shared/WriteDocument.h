@@ -11,8 +11,9 @@
 #import <Foundation/Foundation.h>
 
 @interface WriteDocument : NSObject
-+(NSString *) readDoc;
-+(void) writeDoc:(NSString*) withText;
++(NSArray<NSString*>*) getFiles;
++(NSString *) readFrom:(NSString*) fileName;
++(void) writeTo:(NSString*) fileName :(NSString*) withText;
 @end
 
 #endif /* WriteDocument_h */

@@ -11,14 +11,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include<iostream>
-#include<fstream>
+#include <iostream>
+#include <fstream>
+#include <filesystem>
+#include <tuple>
+
+using namespace std;
+namespace fs = filesystem;
 
 
 class WriteDocumentCPP {
 public:
-    static std::string readTxt(void);
-    static void writeTxt(const char * text);
+    static string readFrom(const char * fileName);
+    static void writeTo(const char * fileName, const char * text);
+    static tuple<string*, int> getFiles();
 };
 
 #endif /* WriteDocumentCPP_hpp */
