@@ -74,7 +74,7 @@ struct ContentView: View {
             }
         }
         .clipped()
-        .edgesIgnoringSafeArea(.bottom)
+        .edgesIgnoringSafeArea([.horizontal, .bottom])
     }
 }
 
