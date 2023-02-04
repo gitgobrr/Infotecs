@@ -8,34 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var currentTab = 1
+    @State var currentTab = 0
     let sysctlInfo = SystemInfo.sysctlInfo() ?? []
     let nsProcessInfo = SystemInfo.nsProcInfo() ?? []
-    #if os(iOS)
+#if os(iOS)
     let uiDeviceInfo = UIDevice.uiDeviceInfo
-    #endif
-    #if os(macOS)
+#endif
+#if os(macOS)
     let iokit = MyIOKit.iokitInfo() ?? []
-    #endif
+#endif
     @State var textFieldText = WriteDocument.readDoc() ?? ""
     var body: some View {
         TabView(selection: $currentTab) {
             List {
-                Section(header: Text("sysctl")) {
+                Section {
                     ForEach(0..<sysctlInfo.count, id: \.self) { index in
                         Text(sysctlInfo[index])
                     }
+                } header: {
+                    Text("sysctl")
                 }
-                Section(header: Text("NSProcessInfo")) {
+                Section {
                     ForEach(0..<nsProcessInfo.count, id: \.self) { index in
                         Text(nsProcessInfo[index])
                     }
+                } header: {
+                    Text("NSProcessInfo")
                 }
 #if os(iOS)
-                Section(header: Text("UIDeviceInfo")) {
+                Section {
                     ForEach(uiDeviceInfo, id: \.self) { info in
                         Text(info)
                     }
+                } header: {
+                    Text("UIDeviceInfo")
                 }
 #endif
 #if os(macOS)
@@ -67,6 +73,8 @@ struct ContentView: View {
                 Image(systemName: "person.circle")
             }
         }
+        .clipped()
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
