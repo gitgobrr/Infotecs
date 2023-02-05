@@ -8,13 +8,37 @@
 import SwiftUI
 
 struct FileReaderView: View {
-    @State var textFieldText = ""
-    @State var files: [String] = WriteDocument.getFiles()
+    @State private var files: [String] = WriteDocument.getFiles()
+    @State private var isPresented: Bool = false
     var body: some View {
         List {
-            ForEach(files, id: \.self) { file in
-                FileView(fileName: file)
+            ForEach($files, id: \.self) { fileName in
+                NavigationLink {
+                    FileView(fileName: fileName.wrappedValue)
+                        .navigationTitle(fileName.wrappedValue)
+                } label: {
+                    HStack {
+                        Image(systemName: "doc.text")
+                        Text(fileName.wrappedValue)
+                    }
+                }
             }
+            .onDelete { indexSet in
+                for i in indexSet {
+                    WriteDocument.removeFile(files[i])
+                }
+                files.remove(atOffsets: indexSet)
+            }
+        }
+        .toolbar {
+            Button {
+                let newFile = "File \(files.count+1).txt"
+                WriteDocument.write(to: newFile, "")
+                files.append(newFile)
+            } label: {
+                Image(systemName: "doc.badge.plus")
+            }
+
         }
     }
 }

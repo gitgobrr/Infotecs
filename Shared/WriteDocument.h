@@ -14,6 +14,7 @@
 +(NSArray<NSString*>*) getFiles;
 +(NSString *) readFrom:(NSString*) fileName;
 +(void) writeTo:(NSString*) fileName :(NSString*) withText;
++(void) removeFile:(NSString*) fileName;
 @end
 
 #endif /* WriteDocument_h */

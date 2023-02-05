@@ -10,7 +10,7 @@
 bool has_suffix(const std::string &str, const std::string &suffix)
 {
     return str.size() >= suffix.size() &&
-           str.compare(str.size() - suffix.size(), suffix.size(), suffix) == 0;
+    str.compare(str.size() - suffix.size(), suffix.size(), suffix) == 0;
 }
 
 int filesCount(filesystem::path path)
@@ -26,36 +26,46 @@ int filesCount(filesystem::path path)
 
 tuple<string*,int> WriteDocumentCPP::getFiles() {
     char buffer[256];
-    
-    strcpy(buffer,getenv("HOME"));
-    strcat(buffer,"/Documents/");
-    string *strs = NULL;
-    strs = new string[filesCount(buffer)];
-    int counter = 0;
-    for (const auto & entry : fs::directory_iterator(buffer)) {
-        if ( has_suffix(entry.path().filename(), ".txt") ) {
-        strs[counter] = entry.path().filename();
-        counter += 1;
-        }
-    }
-    return {strs,counter};
-}
-
-string WriteDocumentCPP::readFrom(const char * fileName) {
-    char buffer[256];
     //HOME is the home directory of your application
     //points to the root of your sandbox
     strcpy(buffer,getenv("HOME"));
     
     //concatenating the path string returned from HOME
     strcat(buffer,"/Documents/");
-    strcat(buffer, fileName);
-    fstream f(buffer, fstream::in );
-    string s;
-    getline( f, s, '\0');
+    string *strs = NULL;
+    strs = new string[filesCount(buffer)];
+    int counter = 0;
+    for (const auto & entry : fs::directory_iterator(buffer)) {
+        if ( has_suffix(entry.path().filename(), ".txt") ) {
+            strs[counter] = entry.path().filename();
+            counter += 1;
+        }
+    }
+    return {strs,counter};
+}
+
+void WriteDocumentCPP::removeFile(const char *fileName) {
+    char buffer[256];
     
-    f.close();
-    return s;
+    strcpy(buffer,getenv("HOME"));
+    strcat(buffer,"/Documents/");
+    strcat(buffer,fileName);
+    
+    std::remove(buffer);
+}
+
+
+string WriteDocumentCPP::readFrom(const char * fileName) {
+    char buffer[256];
+    
+    strcpy(buffer,getenv("HOME"));
+    strcat(buffer,"/Documents/");
+    strcat(buffer, fileName);
+    
+    ifstream ifs(buffer);
+    string content((istreambuf_iterator<char>(ifs)),
+                   (istreambuf_iterator<char>()));
+    return content;
 }
 
 void WriteDocumentCPP::writeTo(const char *fileName, const char *text) {

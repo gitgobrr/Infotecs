@@ -8,32 +8,29 @@
 import SwiftUI
 
 struct FileView: View {
-    var fileName: String
-    @State var fileContents: String
+    private let fileName: String
+    private let fileContents: Binding<String>
     init(fileName: String) {
         self.fileName = fileName
-        self.fileContents = WriteDocument.read(from: fileName)
+        self.fileContents = Binding<String> {
+            WriteDocument.read(from: fileName)
+        } set: { newValue in
+            WriteDocument.write(to: fileName, newValue)
+        }
     }
+    
     var body: some View {
-        HStack(alignment: .top) {
-            VStack {
-                Image(systemName: "doc.text")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 60)
-                Text(fileName)
-            }
-            TextEditor(text: $fileContents)
-                .onChange(of: fileContents) { newValue in
+            TextEditor(text: fileContents)
+                .padding(2)
+                .font(.body)
+                .onChange(of: fileContents.wrappedValue) { newValue in
                     WriteDocument.write(to: fileName, newValue)
                 }
-        }
     }
 }
 
 struct FileView_Previews: PreviewProvider {
     static var previews: some View {
-        FileView(fileName: "filename")
-            .padding()
+        FileView(fileName: "mytextfile.txt")
     }
 }

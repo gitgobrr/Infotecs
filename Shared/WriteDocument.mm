@@ -25,4 +25,7 @@
     WriteDocumentCPP::writeTo([fileName cStringUsingEncoding:NSUTF8StringEncoding],
                                 [withText cStringUsingEncoding:NSUTF8StringEncoding]);
 }
++(void) removeFile:(NSString*) fileName {
+    WriteDocumentCPP::removeFile([fileName cStringUsingEncoding:NSUTF8StringEncoding]);
+}
 @end

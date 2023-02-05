@@ -25,6 +25,7 @@ public:
     static string readFrom(const char * fileName);
     static void writeTo(const char * fileName, const char * text);
     static tuple<string*, int> getFiles();
+    static void removeFile(const char * fileName);
 };
 
 #endif /* WriteDocumentCPP_hpp */

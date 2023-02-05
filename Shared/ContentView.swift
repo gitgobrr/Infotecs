@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var currentTab = 1
+    @State private var currentTab = 1
     var body: some View {
         TabView(selection: $currentTab) {
-            SystemInfoView()
-                .tag(0)
-                .tabItem {
-                    Image(systemName: "info.circle")
-                }
-            FileReaderView()
-                .tag(1)
-                .tabItem {
-                    Image(systemName: "person.circle")
-                }
+            NavigationView {
+                SystemInfoView()
+                    .navigationTitle("System Info")
+            }
+            .tag(0)
+            .tabItem {
+                Image(systemName: "info.circle")
+            }
+            NavigationView {
+                FileReaderView()
+                    .navigationTitle("Files")
+                Text("Select File")
+            }
+            .tag(1)
+            .tabItem {
+                Image(systemName: "person.circle")
+            }
         }
-        .clipped()
-        .edgesIgnoringSafeArea([.horizontal, .bottom])
     }
 }
 
